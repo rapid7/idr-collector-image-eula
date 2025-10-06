@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: idr-collector-image-eula
+  description: Repository for holding the SIEM collector EULA, to be referenced at https://hub.docker.com/r/rapid7/idr-collector Created by Thom Holmes via the GitHub Connector
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/idr-collector-image-eula
+  x-cortex-tag: idr-collector-image-eula
+  x-cortex-type: service
+  x-cortex-domain-parents:
+    - tag: idr-collectors
+  x-cortex-groups:
+    - target:not-deployed
+    - strategy:cloud
+    - exposure:internal-ship
+    
